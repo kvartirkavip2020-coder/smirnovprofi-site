@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: Arial, sans-serif;
+}
+
+.container-custom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.gold-btn {
+  background: #d4af37;
+  color: white;
+  transition: 0.3s;
+}
+
+.gold-btn:hover {
+  background: #b8962e;
+}
