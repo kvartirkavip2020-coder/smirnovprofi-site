@@ -1,32 +1,27 @@
 export default function TrustBlock() {
   const items = [
-    "Опыт работы с 2015 года",
-    "Партнёрская сеть в 35+ регионах России",
-    "Безопасное сопровождение сделок",
-    "Помощь в ипотеке и страховании",
-    "Система услуг «Одно окно»",
-    "Индивидуальный подход к каждому клиенту",
+    "Опыт с 2015 года",
+    "35+ регионов России",
+    "Безопасные сделки",
+    "Ипотека и страхование",
+    "Система «Одно окно»",
+    "Полное сопровождение",
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container-custom">
 
-        <h2 className="text-4xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold mb-10 text-center">
           Почему мне доверяют
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          {items.map((item) => (
-            <div
-              key={item}
-              className="bg-gray-50 p-8 rounded-2xl shadow"
-            >
-              ✓ {item}
+        <div className="grid md:grid-cols-3 gap-6">
+          {items.map((i) => (
+            <div key={i} className="bg-white p-6 rounded-xl shadow">
+              ✓ {i}
             </div>
           ))}
-
         </div>
 
       </div>
