@@ -9,22 +9,59 @@ html {
 body {
   background: #ffffff;
   color: #1a1a1a;
-  font-family: Arial, sans-serif;
+  font-family: Arial, system-ui, sans-serif;
 }
 
+/* ====== CONTAINER SYSTEM ====== */
 .container-custom {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
 }
 
+/* ====== BUTTON SYSTEM ====== */
 .gold-btn {
-  background: #d4af37;
+  background: linear-gradient(135deg, #d4af37, #b8962e);
   color: white;
-  transition: 0.3s;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
 }
 
 .gold-btn:hover {
-  background: #b8962e;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(212, 175, 55, 0.3);
+}
+
+/* ====== CARD SYSTEM ====== */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+}
+
+/* ====== SECTION SPACING ====== */
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* ====== TYPOGRAPHY ====== */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+/* ====== ANIMATIONS HELPERS ====== */
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
 }
