@@ -4,110 +4,107 @@ export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
 
+      {/* Фон */}
       <Image
         src="/ekaterinburg.jpg"
         alt="Екатеринбург"
         fill
         priority
-        className="object-cover"
+        className="object-cover scale-105"
       />
 
-      <div className="absolute inset-0 bg-black/60" />
+      {/* Затемнение (усилено для читаемости) */}
+      <div className="absolute inset-0 bg-black/70" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full">
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-          {/* Левая колонка */}
+          {/* ТЕКСТ */}
           <div>
 
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-400/30">
-              Екатеринбург • Россия • Работаю по всей стране
+            {/* бейдж */}
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-400/30 text-sm">
+              Екатеринбург • Работаю по всей России • С 2015 года
             </div>
 
+            {/* главный заголовок */}
             <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Помогаю безопасно покупать,
-              продавать и сдавать недвижимость
+              Помогаю безопасно купить,
+              продать или сдать недвижимость
             </h1>
 
-            <p className="mt-6 text-xl text-gray-200 max-w-2xl">
-              Сергей Смирнов — частный специалист по недвижимости.
-              Полное сопровождение сделок, проверка объектов,
-              ипотека, страхование и система «Одно окно».
+            {/* подзаголовок */}
+            <p className="mt-6 text-xl text-gray-200 max-w-2xl leading-relaxed">
+              Я беру на себя всю сложность сделки:
+              проверку объекта, переговоры, ипотеку, документы
+              и сопровождение до передачи ключей.
+              <br /><br />
+              Работаю как частный специалист через систему «Одно окно» с партнёрами в 35+ регионах России.
             </p>
 
+            {/* CTA */}
             <div className="mt-8 flex flex-wrap gap-4">
 
-              <button className="gold-btn px-8 py-4 rounded-xl">
+              <a
+                href="#contacts"
+                className="gold-btn px-8 py-4 rounded-xl font-semibold"
+              >
                 Получить консультацию
-              </button>
+              </a>
 
-              <button className="border border-yellow-400 text-white px-8 py-4 rounded-xl">
+              <a
+                href="#services"
+                className="border border-yellow-400 text-white px-8 py-4 rounded-xl font-semibold hover:bg-yellow-400/10 transition"
+              >
                 Подобрать объект
-              </button>
+              </a>
 
             </div>
 
-            {/* Цифры доверия */}
+            {/* микро-доверие */}
+            <div className="mt-10 space-y-2 text-gray-300 text-sm">
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
-
-              <div className="bg-white/10 backdrop-blur p-4 rounded-xl text-center">
-                <div className="text-3xl font-bold text-yellow-400">
-                  2015
-                </div>
-                <div className="text-sm text-gray-200">
-                  начало практики
-                </div>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur p-4 rounded-xl text-center">
-                <div className="text-3xl font-bold text-yellow-400">
-                  35+
-                </div>
-                <div className="text-sm text-gray-200">
-                  регионов РФ
-                </div>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur p-4 rounded-xl text-center">
-                <div className="text-3xl font-bold text-yellow-400">
-                  Под ключ
-                </div>
-                <div className="text-sm text-gray-200">
-                  сопровождение
-                </div>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur p-4 rounded-xl text-center">
-                <div className="text-3xl font-bold text-yellow-400">
-                  Одно окно
-                </div>
-                <div className="text-sm text-gray-200">
-                  9 услуг
-                </div>
-              </div>
+              <p>✓ Полное сопровождение сделки под ключ</p>
+              <p>✓ Проверка недвижимости перед покупкой</p>
+              <p>✓ Ипотека, страхование, юридическая защита</p>
 
             </div>
 
           </div>
 
-          {/* Правая колонка */}
-
+          {/* ФОТО */}
           <div className="hidden lg:flex justify-center">
 
             <div className="relative">
 
-              <div className="absolute inset-0 bg-yellow-500/10 blur-3xl rounded-full" />
+              {/* световой ореол */}
+              <div className="absolute inset-0 bg-yellow-500/10 blur-3xl rounded-full scale-110" />
 
-              <Image
-                src="/sergey-smirnov.png"
-                alt="Сергей Смирнов"
-                width={380}
-                height={520}
-                priority
-                className="relative z-10 object-contain"
-              />
+              <div className="relative bg-white/5 border border-white/10 backdrop-blur-xl p-4 rounded-2xl">
+
+                <Image
+                  src="/sergey-smirnov.png"
+                  alt="Сергей Смирнов"
+                  width={360}
+                  height={500}
+                  priority
+                  className="object-contain rounded-xl"
+                />
+
+                <div className="mt-4 text-center text-white">
+
+                  <p className="font-semibold">
+                    Сергей Смирнов
+                  </p>
+
+                  <p className="text-sm text-gray-300">
+                    Частный специалист по недвижимости
+                  </p>
+
+                </div>
+
+              </div>
 
             </div>
 
@@ -116,7 +113,6 @@ export default function Hero() {
         </div>
 
       </div>
-
     </section>
   );
-}
+            }
