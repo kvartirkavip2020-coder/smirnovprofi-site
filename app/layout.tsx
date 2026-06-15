@@ -1,11 +1,10 @@
-import "./globals.css";
+import "../app/globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Сергей Смирнов | Частный специалист по недвижимости",
-  description:
-    "Помогаю безопасно покупать, продавать и сдавать недвижимость.",
+  title: "Сергей Смирнов — недвижимость",
+  description: "Частный специалист по недвижимости",
 };
 
 export default function RootLayout({
@@ -17,7 +16,7 @@ export default function RootLayout({
     <html lang="ru">
       <body>
         <Header />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
