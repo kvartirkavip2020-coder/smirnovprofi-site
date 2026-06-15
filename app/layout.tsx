@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Сергей Смирнов — недвижимость",
-  description: "Частный специалист по недвижимости",
+  description: "Частный специалист по недвижимости в России",
 };
 
 export default function RootLayout({
