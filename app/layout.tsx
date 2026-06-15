@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Сергей Смирнов — недвижимость",
-  description: "Частный специалист по недвижимости в России",
+  description: "Частный специалист по недвижимости. Покупка, продажа, аренда, сопровождение сделок.",
 };
 
 export default function RootLayout({
