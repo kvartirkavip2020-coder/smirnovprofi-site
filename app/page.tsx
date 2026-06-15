@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import TrustBlock from "../components/TrustBlock";
 import ServicesGrid from "../components/ServicesGrid";
 import OneWindowGrid from "../components/OneWindowGrid";
 import ContactForm from "../components/ContactForm";
