@@ -1,64 +1,23 @@
 export default function ContactForm() {
   return (
     <section className="py-24 bg-gray-50">
-      <div className="container-custom max-w-3xl">
+      <div className="container-custom max-w-xl">
 
-        <div className="text-center mb-10">
+        <h2 className="text-3xl font-bold mb-6">
+          Оставить заявку
+        </h2>
 
-          <h2 className="text-4xl font-bold text-graphite">
-            Получить консультацию
-          </h2>
+        <form className="flex flex-col gap-4">
 
-          <p className="mt-4 text-gray-600">
-            Оставьте заявку и я свяжусь с вами для бесплатной консультации.
-            Помогу разобраться в ситуации и предложу оптимальное решение.
-          </p>
+          <input className="border p-3 rounded" placeholder="Имя" />
+          <input className="border p-3 rounded" placeholder="Телефон" />
+          <textarea className="border p-3 rounded" placeholder="Комментарий" />
 
-        </div>
+          <button className="gold-btn py-3 rounded">
+            Отправить
+          </button>
 
-        <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-
-          <form className="flex flex-col gap-5">
-
-            <input
-              type="text"
-              placeholder="Ваше имя"
-              className="border border-gray-200 p-4 rounded-xl focus:outline-none focus:border-yellow-500"
-            />
-
-            <input
-              type="tel"
-              placeholder="Телефон"
-              className="border border-gray-200 p-4 rounded-xl focus:outline-none focus:border-yellow-500"
-            />
-
-            <textarea
-              rows={5}
-              placeholder="Комментарий (необязательно)"
-              className="border border-gray-200 p-4 rounded-xl focus:outline-none focus:border-yellow-500"
-            />
-
-            <button
-              type="submit"
-              className="
-                gold-btn
-                py-4
-                rounded-xl
-                text-lg
-                font-semibold
-              "
-            >
-              Получить консультацию
-            </button>
-
-          </form>
-
-          <p className="text-sm text-gray-500 mt-6 text-center">
-            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-            и обработкой персональных данных.
-          </p>
-
-        </div>
+        </form>
 
       </div>
     </section>
