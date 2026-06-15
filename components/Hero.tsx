@@ -2,63 +2,85 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
 
+      {/* BACKGROUND IMAGE */}
       <Image
         src="/ekaterinburg.jpg"
-        alt="Екатеринбург"
+        alt="Город"
         fill
-        className="object-cover"
+        priority
+        className="object-cover scale-105"
       />
 
-      <div className="absolute inset-0 bg-black/70" />
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-black/55" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+      {/* CONTENT */}
+      <div className="relative z-10 container-custom animate-fadeIn">
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-3xl">
 
-          <div>
+          {/* BADGE */}
+          <div className="inline-block mb-6 px-4 py-2 rounded-full bg-white/10 text-white border border-white/20 backdrop-blur">
+            Работаю с недвижимостью с 2015 года • 35+ регионов
+          </div>
 
-            <div className="text-yellow-300 mb-4">
-              Екатеринбург • Россия • С 2015 года
-            </div>
+          {/* TITLE */}
+          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
+            Безопасные сделки с недвижимостью под ключ
+          </h1>
 
-            <h1 className="text-5xl font-bold text-white">
-              Недвижимость без рисков и стресса
-            </h1>
+          {/* SUBTITLE */}
+          <p className="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed">
+            Покупка, продажа и аренда недвижимости.
+            Полное сопровождение сделок, проверка объектов,
+            ипотека и система «Одно окно» через партнёрскую сеть.
+          </p>
 
-            <p className="text-gray-200 mt-6">
-              Полное сопровождение сделок: покупка, продажа, аренда,
-              ипотека и юридическая защита.
-            </p>
+          {/* CTA BUTTONS */}
+          <div className="mt-8 flex flex-wrap gap-4">
 
-            <div className="mt-8 flex gap-4">
+            <a href="#contacts" className="gold-btn">
+              Получить консультацию
+            </a>
 
-              <a href="#contacts" className="bg-yellow-500 px-6 py-3 rounded">
-                Получить консультацию
-              </a>
-
-              <a href="#services" className="border border-yellow-400 px-6 py-3 rounded text-white">
-                Услуги
-              </a>
-
-            </div>
+            <a
+              href="#services"
+              className="px-6 py-3 rounded-xl border border-white/30 text-white hover:bg-white/10 transition"
+            >
+              Подобрать объект
+            </a>
 
           </div>
 
-          <div className="hidden lg:block">
-            <Image
-              src="/sergey-smirnov.png"
-              alt="Сергей"
-              width={380}
-              height={500}
-            />
+          {/* STATS */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+
+            <div className="card bg-white/10 text-white backdrop-blur border border-white/10">
+              <div className="text-2xl font-bold text-yellow-400">10+</div>
+              <div className="text-sm text-gray-200">лет опыта</div>
+            </div>
+
+            <div className="card bg-white/10 text-white backdrop-blur border border-white/10">
+              <div className="text-2xl font-bold text-yellow-400">35+</div>
+              <div className="text-sm text-gray-200">регионов</div>
+            </div>
+
+            <div className="card bg-white/10 text-white backdrop-blur border border-white/10">
+              <div className="text-2xl font-bold text-yellow-400">100+</div>
+              <div className="text-sm text-gray-200">сделок</div>
+            </div>
+
+            <div className="card bg-white/10 text-white backdrop-blur border border-white/10">
+              <div className="text-2xl font-bold text-yellow-400">9</div>
+              <div className="text-sm text-gray-200">услуг</div>
+            </div>
+
           </div>
 
         </div>
-
       </div>
-
     </section>
   );
 }
