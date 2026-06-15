@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-20">
       <div className="container-custom max-w-xl">
 
         <h2 className="text-3xl font-bold mb-6">
@@ -9,11 +9,11 @@ export default function ContactForm() {
 
         <form className="flex flex-col gap-4">
 
-          <input className="border p-3 rounded" placeholder="Имя" />
-          <input className="border p-3 rounded" placeholder="Телефон" />
-          <textarea className="border p-3 rounded" placeholder="Комментарий" />
+          <input placeholder="Имя" className="border p-3" />
+          <input placeholder="Телефон" className="border p-3" />
+          <textarea placeholder="Сообщение" className="border p-3" />
 
-          <button className="gold-btn py-3 rounded">
+          <button className="bg-yellow-500 py-3 rounded">
             Отправить
           </button>
 
